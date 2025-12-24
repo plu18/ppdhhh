@@ -1,0 +1,22 @@
+{
+	"name": "Ubuntu 24.04 Dev Container",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"runArgs": [
+		"--gpus",
+		"all"
+	],
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "bash"
+			},
+			"extensions": [
+				"ms-python.python",
+				"GitHub.copilot"
+			]
+		}
+	},
+	"remoteUser": "root"
+}
